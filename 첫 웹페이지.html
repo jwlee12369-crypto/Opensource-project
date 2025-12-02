@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>반도체 기업 분석</title>
+    <style>
+
+body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header { 
+            background-color: aliceblue;
+            margin: 0 auto;
+            border-radius: 20px;
+            width: 800px;
+            height: 200px;   
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .company-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 50px;
+        }
+        img {
+            width: 100px; 
+            height: 100px; 
+            border: 2px solid black;
+            display: block;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            
+        }
+        .company-name {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #main-container {
+            width: 800px;
+            margin: 0 auto;     
+            display: flex;      
+            justify-content: space-between; 
+            align-items: flex-start; 
+        }
+    
+        #section {
+            width: 580px;       
+            height: 400px;      
+            background-color: #fff; 
+            border: 1px dashed gray; 
+            padding: 10px;
+        }
+
+        #stock-board {
+            width: 800px;
+            background-color: #f0f0f0; 
+            border-radius: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            display: flex;
+            flex-direction: column; 
+            gap: 15px;          
+        }
+        .stock-title-box {
+            background-color: #e6f3ff; 
+            padding: 10px 0;           
+            text-align: center;        
+            border-radius: 10px;       
+            font-weight: bold;         
+            border: 1px solid #bcd;    
+            margin-bottom: 5px;        
+        }
+        .stock-card {
+            background-color: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .stock-name {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .stock-price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .up { color: #d30000; font-size: 12px; }
+        .down { color: #0000d3; font-size: 12px; }
+
+    </style>  
+    </head>
+
+<body>
+    <div id="header">
+        <h1>삼성전자-SK하이닉스-인텔 기업의 반도체 제조 </h1>
+    </div>
+
+    <div id="nav">
+        <div class="company-box">
+            <a href="삼성전자.html">
+                <img src="samsung.png">
+            </a>
+        <div class="company-name">
+            <a href="삼성전자.html">삼성전자</a>
+        </div>
+        </div>
+        <div class="company-box"> 
+            <a href="SK하이닉스.html">
+                <img src="SK하이닉스.png">
+            </a>
+            <div class="company-name">
+                <a href="SK하이닉스.html">SK하이닉스</a>
+            </div>
+        </div>
+
+        <div class="company-box">
+            <img src="intel.jpg">
+        <div class="company-name">인텔</div>
+        </div>
+    </div>
+
+    <div id="main-container">
+        
+        <div id="section"> 
+            <h1>기업 관련 뉴스들 URL</h1>
+        </div>
+
+        <aside id="stock-board">
+            
+            <div class="stock-title-box">
+                최근 주식 현황
+            </div>
+
+            <div class="stock-card">
+                <div class="stock-name">삼성전자</div>
+                <div class="stock-price">103,400원</div>
+                <div class="up">▲ 2.58%</div>
+            </div>
+
+            <div class="stock-card">
+                <div class="stock-name">SK하이닉스</div>
+                <div class="stock-price">558,8000원</div>
+                <div class="up">▲ 3.72%</div>
+            </div>
+
+            <div class="stock-card">
+                <div class="stock-name">Intel (INTC)</div>
+                <div class="stock-price">$4.59</div>
+                <div class="down">▲ 1.43</div>
+            </div>
+        </aside>
+        
+    </div>
+
+</body>
+</html>
