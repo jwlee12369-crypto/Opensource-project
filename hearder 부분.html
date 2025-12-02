@@ -6,7 +6,6 @@
         #header { 
             background-color: aliceblue;
             margin: 0 auto;
-            border: 1px;
             border-radius: 20px;
             width: 800px;
             height: 200px;   
@@ -15,11 +14,40 @@
             justify-content: center;
             align-items: center;
         }
-        #nav {
+        #section {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 30px;
         }
+
+        .company-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 50px;
+        }
+        img {
+            width: 100px; 
+            height: 100px; 
+            border: 2px solid black;
+            display: block;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            
+        }
+        .company-name {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
     </style>  
     </head>
 
@@ -28,20 +56,25 @@
         <h1>삼성전자-SK하이닉스-인텔 기업의 반도체 제조 </h1>
     </div>
 
-    <div id="nav">
-        <span>
-            <img src="samsung.png" width: 100px; height: 100px;>
-        </span>
+    <div id="section">
+        <div class="company-box">
+            <img src="samsung.png">
+        <div class="company-name">삼성전자</div>
+        </div>
 
-        <span> 
+        <div class="company-box"> 
             <a href="SK하이닉스.html">
-                <img src="SK하이닉스.png" width: 100px; height: 100px;>
+                <img src="SK하이닉스.png">
             </a>
-        </span>
+            <div class="company-name">
+                <a href="SK하이닉스.html">SK하이닉스</a>
+            </div>
+        </div>
 
-        <span> 
-            <img src="intel.jpg" width: 100px; height: 100px;>
-        </span>
+        <div class="company-box">
+            <img src="intel.jpg">
+        <div class="company-name">인텔</div>
+        </div>
     </div>
 
 </body>
