@@ -1,10 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <title>SK 하이닉스</title>
+
+        <style>
+            body {
+                font-family: 'Malgun Gothic', sans-serif;
+                margin: 20px;
+                text-align: center;
+            }
+
+            header {
+                border-radius: 20px;       
+                padding: 20px;             
+                background-color: #eb9d9d; 
+            }
+
+            section {
+                margin-top: 50px;
+            }
+
+            img {
+            width: 180px; 
+            height: 180px;
+            }
+
+            .main-logo {
+                width: 180px; 
+                height: 180px;
+                margin-bottom: 20px;
+            }
+
+            .product-box {
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 20px 30px;
+                width: 80%;          
+                margin: 0 auto;       
+                background-color: #f9f9f9;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+                text-align: left;
+            }
+
+            .product-box ul {
+            list-style-type: none; 
+            padding-left: 0;
+            }
+
+            .product-box ul li {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            }
+
+            .li-text {
+            flex: 1; 
+            margin-right: 15px; 
+            }
+
+        
+            .small-icon {
+            width: 130px; 
+            height: 130px; 
+            border-radius: 5px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            }
+
+            footer {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #eb9d9d; 
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #d18e8e; 
+        }
+
+        </style>
     </head>
 
     <body>
-        <h1>SK 하이닉스에 대한 내용 입니다.</h1>
+        <header>
+            <h1>SK 하이닉스</h1>
+        </header>
+        
+        <nav>
+            <img src="SK하이닉스.png" alt="SK하이닉스 로고" class="main-logo">
+        </nav>
+
+<section>
+        <div class="product-box">
+            <h3>1. DRAM (초고속 메모리)</h3>
+            <p>데이터를 처리하는 핵심 반도체입니다.</p>
+            <p style="margin-bottom: 25px;"></p>
+            <ul>
+                <li>
+                    <span class="li-text"><strong>HBM:</strong> AI 시대를 이끄는 고대역폭 초고속 메모리</span>
+                    <img src="HBM.png" alt="HBM" class="small-icon">
+                </li>
+                <li>
+                    <span class="li-text"><strong>DDR5:</strong> 서버와 PC를 위한 차세대 표준 메모리</span>
+                    </li>
+                <li>
+                    <span class="li-text"><strong>LPDDR:</strong> 모바일 기기에 최적화된 저전력 메모리</span>
+                </li>
+            </ul>
+            <br>    
+            <h3>2. NAND Flash (저장 장치)</h3>
+            <p>데이터를 영구적으로 저장하는 반도체입니다.</p>
+            <ul>
+                <li>
+                    <span class="li-text"><strong>Enterprise SSD:</strong> 데이터센터용 대용량 저장장치</span>
+                    <img src="NAND Flash.png" alt="NAND Flash" class="small-icon">
+                </li>
+                <li>
+                    <span class="li-text"><strong>Mobile UFS:</strong> 스마트폰용 고속 내장 메모리</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <a href="첫 웹페이지.html" class="back-btn">🏠 메인 화면으로 돌아가기</a>
+    </footer>
+
     </body>
 </html>
