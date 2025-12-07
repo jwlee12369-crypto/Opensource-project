@@ -57,29 +57,62 @@ body {
 
         #main-container {
             width: 800px;
-            margin: 0 auto;     
-            display: flex;      
-            justify-content: space-between; 
-            align-items: flex-start; 
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch; 
+            margin-bottom: 50px; 
         }
     
-        #section {
-            width: 580px;       
-            height: 400px;      
-            background-color: #fff; 
-            border: 1px dashed gray; 
-            padding: 10px;
+#section {
+            width: 560px;
+            background-color: #f8f9fa; 
+            border: 1px solid #ddd; 
+            border-radius: 15px; 
+            padding: 25px; 
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05); 
+        }
+
+        #section h1 {
+            font-size: 22px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e9ecef; 
+        }
+
+        #section ul {
+            padding-left: 20px;
+            list-style-type: square;
+        }
+
+        #section li {
+            margin-bottom: 15px; 
+        }
+
+        #section li a {
+            font-size: 16px;
+            color: #0056b3; 
+            line-height: 1.6;
+            transition: color 0.2s; 
+        }
+        
+        #section li a:hover {
+            color: #003d82; 
+            text-decoration: underline;
         }
 
         #stock-board {
-            width: 800px;
+            width: 220px;
             background-color: #f0f0f0; 
             border-radius: 15px;
             padding: 10px;
             border: 1px solid #ddd;
             display: flex;
             flex-direction: column; 
-            gap: 15px;          
+            gap: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);          
         }
         .stock-title-box {
             background-color: #e6f3ff; 
@@ -97,6 +130,11 @@ body {
             padding: 10px;
             text-align: center;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s
+        }
+
+        .stock-card:hover {
+             transform: translateY(-3px); 
         }
 
         .stock-name {
@@ -154,7 +192,35 @@ body {
     <div id="main-container">
         
         <div id="section"> 
-            <h1>기업 관련 뉴스들 URL</h1>
+            <h1>반도체 관련 기업 뉴스</h1>
+    
+        <ul style="line-height: 200%; font-size: 17px;">
+            <li>
+                <a href="https://www.joongang.co.kr/article/25386991" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                [종합] 삼성전자, 인텔 제치고 '미래 준비' 7위... AI 주도권 경쟁
+            </a>
+            </li>
+            <li>
+                <a href="https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202512050337&t=NNv" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                AI칩·낸드 지각변동…"삼성 반도체의 시간 온다"
+            </a>
+            </li>
+            <li>
+                <a href="https://www.chosun.com/economy/tech_it/2025/11/17/BESVEWX6YJFQNFTDJG4Y2SOQ4A/" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                반도체 슈퍼사이클 오나... 삼성·SK하이닉스 영업이익 200조 전망
+            </a>
+            </li>
+            <li>
+                <a href="https://www.energy-news.co.kr/news/articleView.html?idxno=220546" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                12월 반도체 상장기업 브랜드 평판: 1위 삼성, 2위 SK하이닉스
+            </a>
+            </li>
+            <li>
+                <a href="https://www.joongang.co.kr/article/25386870" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                인텔, 파운드리 재건 난항... 미래 준비 지표 19위로 하락
+            </a>
+            </li>
+        </ul>
         </div>
 
         <aside id="stock-board">
