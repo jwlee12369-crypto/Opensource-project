@@ -57,29 +57,62 @@ body {
 
         #main-container {
             width: 800px;
-            margin: 0 auto;     
-            display: flex;      
-            justify-content: space-between; 
-            align-items: flex-start; 
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch; 
+            margin-bottom: 50px; 
         }
     
-        #section {
-            width: 580px;       
-            height: 400px;      
-            background-color: #fff; 
-            border: 1px dashed gray; 
-            padding: 10px;
+#section {
+            width: 560px;
+            background-color: #f8f9fa; 
+            border: 1px solid #ddd; 
+            border-radius: 15px; 
+            padding: 25px; 
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05); 
+        }
+
+        #section h1 {
+            font-size: 22px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e9ecef; 
+        }
+
+        #section ul {
+            padding-left: 20px;
+            list-style-type: square;
+        }
+
+        #section li {
+            margin-bottom: 15px; 
+        }
+
+        #section li a {
+            font-size: 16px;
+            color: #0056b3; 
+            line-height: 1.6;
+            transition: color 0.2s; 
+        }
+        
+        #section li a:hover {
+            color: #003d82; 
+            text-decoration: underline;
         }
 
         #stock-board {
-            width: 800px;
+            width: 220px;
             background-color: #f0f0f0; 
             border-radius: 15px;
             padding: 10px;
             border: 1px solid #ddd;
             display: flex;
             flex-direction: column; 
-            gap: 15px;          
+            gap: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);          
         }
         .stock-title-box {
             background-color: #e6f3ff; 
@@ -97,6 +130,11 @@ body {
             padding: 10px;
             text-align: center;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s
+        }
+
+        .stock-card:hover {
+             transform: translateY(-3px); 
         }
 
         .stock-name {
@@ -154,9 +192,36 @@ body {
     <div id="main-container">
         
         <div id="section"> 
-            <h1>기업 관련 뉴스들 URL</h1>
+            <h1>반도체 관련 기업 뉴스</h1>
+    
+        <ul style="line-height: 200%; font-size: 17px;">
+            <li>
+                <a href="https://www.joongang.co.kr/article/25386991" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                [종합] 삼성전자, 인텔 제치고 '미래 준비' 7위... AI 주도권 경쟁
+            </a>
+            </li>
+            <li>
+                <a href="https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202512050337&t=NNv" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                AI칩·낸드 지각변동…"삼성 반도체의 시간 온다"
+            </a>
+            </li>
+            <li>
+                <a href="https://www.mbn.co.kr/news/economy/5160044" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                삼성전자, SK하이닉스 제치고 4분기 'D램 1위' 전망
+            </a>
+            </li>
+            <li>
+                <a href="https://www.moneys.co.kr/article/2025120515315544787" target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                SK하이닉스, 미래기술연구원 전면에… AI 전담센터로 HBM '초격차'
+            </a>
+            </li>
+            <li>
+                <a href="https://www.g-enews.com/view.php?ud=202512041240018233fbbec65dfb_1 target="_blank" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                인텔, 파운드리 대반격…"차세대 14A 공정은 '진짜'"
+            </a>
+            </li>
+        </ul>
         </div>
-
         <aside id="stock-board">
             
             <div class="stock-title-box">
@@ -165,20 +230,20 @@ body {
 
             <div class="stock-card">
                 <div class="stock-name">삼성전자</div>
-                <div class="stock-price">103,400원</div>
-                <div class="up">▲ 2.58%</div>
+                <div class="stock-price">109,500원</div>
+                <div class="up">▲ 1.01%</div>
             </div>
 
             <div class="stock-card">
                 <div class="stock-name">SK하이닉스</div>
-                <div class="stock-price">558,8000원</div>
-                <div class="up">▲ 3.72%</div>
+                <div class="stock-price">577,000원</div>
+                <div class="up">▲ 6.07%</div>
             </div>
 
             <div class="stock-card">
                 <div class="stock-name">Intel (INTC)</div>
-                <div class="stock-price">$4.59</div>
-                <div class="down">▲ 1.43</div>
+                <div class="stock-price">$41.41</div>
+                <div class="down">▲ 0.91</div>
             </div>
         </aside>
         
