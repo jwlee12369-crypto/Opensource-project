@@ -1,166 +1,148 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>삼성전자</title>
+<head>
+    <meta charset="UTF-8">
+    <title>삼성전자 뉴스 & 팁 블로그</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
 
-        <style>
-            body {
-                font-family: 'Malgun Gothic', sans-serif;
-                margin: 20px;
-                text-align: center;
-            }
+        header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
 
-            section {
-                margin-top: 50px;
-            }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
 
-            .intro-section {
-                background-image: url('Samsung image.jpg');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                
-                padding: 60px 20px;
-                margin-top: 30px;
-                border-radius: 15px;
-            }
+        .section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 25px 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
 
-            .intro-text {
-                width: 80%;
-                max-width: 700px;
-                margin: 0 auto;
-                padding: 30px;
-                line-height: 1.6;
-                color: #333;
-                word-break: keep-all;
-                background-color: rgba(255, 255, 255, 0.85);
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            }
+        .section h2 {
+            color: #0d47a1;
+            margin-top: 0;
+        }
 
-            hr {
-                width: 80%;
-                border: 0;
-                border-top: 1px solid #ccc;
-                margin: 40px auto;
-            }
+        .section p {
+            line-height: 1.7;
+        }
 
-            .product-box {
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                padding: 20px 30px;
-                width: 80%;
-                margin: 0 auto;
-                background-color: #f9f9f9;
-                box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-                text-align: left;
-            }
+        .article-list {
+            list-style-type: none;
+            padding: 0;
+        }
 
-            .product-box ul {
-                list-style-type: none;
-                padding-left: 0;
-            }
+        .article-list li {
+            margin-bottom: 20px;
+        }
 
-            .product-box ul li {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 15px;
-                padding-bottom: 10px;
-                border-bottom: 1px solid #eee;
-            }
+        .article-list a {
+            text-decoration: none;
+            color: #004ba0;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-            .li-text {
-                flex: 1;
-                margin-right: 15px;
-            }
+        .article-list a:hover {
+            color: #ff6b6b;
+        }
 
-            .small-icon {
-                width: 130px;
-                height: 130px;
-                border-radius: 5px;
-                object-fit: cover;
-                border: 1px solid #ddd;
-            }
+        footer {
+            margin-top: 50px;
+            padding: 40px 20px;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+        }
 
-            footer {
-                margin-top: 50px;
-                margin-bottom: 30px;
-            }
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
 
-            .back-btn {
-                display: inline-block;
-                padding: 15px 30px;
-                background-color: #9db5eb;
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-                border-radius: 30px;
-                box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-                transition: background-color 0.3s;
-            }
+        footer a:hover {
+            color: #ff6b6b;
+        }
 
-            .back-btn:hover {
-                background-color: #7d9bd6;
-            }
-        </style>
-    </head>
+        .footer-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            margin-top: 15px;
+            background-color: #ff6b6b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
 
-    <body>
+        .footer-btn:hover {
+            background-color: #e55b5b;
+        }
+    </style>
+</head>
+<body>
 
-        <section class="intro-section">
-            <div class="intro-text">
-                <h2>삼성전자</h2>
-                <p>
-                    삼성전자는 세계적인 기술 기업으로 반도체, 스마트폰, 가전, 네트워크 장비 등 다양한 분야에서 글로벌 시장을 선도하고 있습니다.
-                    특히 메모리 반도체 분야에서는 세계 점유율 1위를 유지하며, 고성능·저전력 기술을 바탕으로 AI·클라우드 시대의 핵심 솔루션을 제공하고 있습니다.
+<header>
+    <h1>삼성전자 뉴스 & 팁 블로그</h1>
+</header>
 
-                    또한 파운드리, 시스템 반도체와 같은 비메모리 영역에도 투자를 확대하며 미래 전략 산업에서 영향력을 강화하고 있습니다.
-                    혁신 기술과 지속가능경영(ESG)을 결합하여 글로벌 IT 생태계 발전에 기여하는 것을 목표로 하고 있습니다.
-                </p>
-            </div>
-        </section>
+<section class="section">
+    <h2>최신 뉴스</h2>
+    <ul class="article-list">
+        <li><a href="#">AI 기술을 활용한 새로운 반도체 개발 소식</a></li>
+        <li><a href="#">삼성전자 친환경 경영 전략 및 ESG 보고서 발표</a></li>
+        <li><a href="#">5G와 IoT 기반 스마트 시티 솔루션 공개</a></li>
+    </ul>
+</section>
 
-        <hr>
+<section class="section">
+    <h2>생활 꿀팁</h2>
+    <ul class="article-list">
+        <li><a href="#">스마트폰 배터리 오래 쓰는 법 5가지</a></li>
+        <li><a href="#">TV와 모니터를 연결해 멀티 작업 효율 높이는 방법</a></li>
+        <li><a href="#">노트북 최적화 설정으로 업무 속도 높이기</a></li>
+    </ul>
+</section>
 
-        <section>
-            <div class="product-box">
-                <h3>1. DRAM (메모리 반도체)</h3>
-                <p>데이터 저장과 처리 속도를 결정하는 핵심 메모리입니다.</p>
-                <p style="margin-bottom: 25px;"></p>
-                <ul>
-                    <li>
-                        <span class="li-text"><strong>GDDR7:</strong> 차세대 그래픽용 초고속 메모리</span>
-                        <img src="GDDR7.png" alt="GDDR7" class="small-icon">
-                    </li>
-                    <li>
-                        <span class="li-text"><strong>DDR5:</strong> 더 빠르고 효율적인 차세대 표준 DRAM</span>
-                    </li>
-                    <li>
-                        <span class="li-text"><strong>LPDDR5X:</strong> 모바일 기기에 특화된 고성능 저전력 메모리</span>
-                    </li>
-                </ul>
+<section class="section">
+    <h2>커뮤니티 소식</h2>
+    <ul class="article-list">
+        <li><a href="#">삼성전자 팬 미팅 및 온라인 이벤트 일정</a></li>
+        <li><a href="#">사용자 리뷰 모음: 최신 갤럭시 시리즈 평가</a></li>
+        <li><a href="#">기술 블로그 Q&A: 궁금증 바로 해결하기</a></li>
+    </ul>
+</section>
 
-                <br>
+<footer>
+    <p>삼성전자 공식 블로그 & 커뮤니티 페이지</p>
+    <p>
+        <a href="회사소개.html">회사소개</a> |
+        <a href="개인정보처리방침.html">개인정보처리방침</a> |
+        <a href="문의.html">문의</a>
+    </p>
+    <p>© 2025 삼성전자. All rights reserved.</p>
+    <a href="첫 웹페이지.html" class="footer-btn">🏠 메인 화면으로 돌아가기</a>
+</footer>
 
-                <h3>2. NAND Flash (저장 장치)</h3>
-                <p>데이터를 장기간 보관하는 비휘발성 저장 기술입니다.</p>
-                <ul>
-                    <li>
-                        <span class="li-text"><strong>V-NAND:</strong> 3D 적층 기술 기반 고성능 저장 솔루션</span>
-                        <img src="V-NAND.png" alt="V-NAND" class="small-icon">
-                    </li>
-                    <li>
-                        <span class="li-text"><strong>Portable SSD:</strong> 빠르고 안전한 외장형 저장 장치</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <footer>
-            <a href="첫 웹페이지.html" class="back-btn">🏠 메인 화면으로 돌아가기</a>
-        </footer>
-
-    </body>
+</body>
 </html>
+
 
