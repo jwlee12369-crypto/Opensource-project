@@ -16,7 +16,7 @@
         header {
             background-color: #0d47a1;
             color: white;
-            padding: 20px 20px;
+            padding: 20px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -28,16 +28,11 @@
             font-size: 28px;
         }
 
-        nav {
-            margin-top: 10px;
-        }
-
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
-            transition: color 0.3s;
         }
 
         nav a:hover {
@@ -48,18 +43,17 @@
             max-width: 900px;
             margin: 50px auto;
             padding: 30px;
-            background-color: rgba(255,255,255,0.9);
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .section h2 {
             color: #0d47a1;
-            margin-top: 0;
         }
 
         .article-list {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
             display: flex;
             flex-wrap: wrap;
@@ -71,73 +65,56 @@
             background-color: #fff;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
 
         .article-list li:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
 
         .article-list img {
             width: 100%;
-            height: 180px;
+            height: 160px;
             object-fit: cover;
         }
 
         .article-list a {
             display: block;
-            padding: 15px;
-            color: #004ba0;
+            padding: 12px;
             font-weight: bold;
+            color: #004ba0;
             text-decoration: none;
         }
 
-        .article-list a:hover {
-            color: #ff6b6b;
+        .article-list p {
+            padding: 0 12px 12px;
+            font-size: 14px;
+            color: #555;
         }
 
         footer {
-            margin-top: 50px;
-            padding: 40px 20px;
+            margin-top: 40px;
+            padding: 30px;
+            text-align: center;
             background-color: #222;
             color: #fff;
-            text-align: center;
         }
 
         footer a {
             color: #bbb;
+            margin: 0 8px;
             text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: #ff6b6b;
         }
 
         .footer-btn {
             display: inline-block;
-            padding: 10px 25px;
-            margin-top: 15px;
-            background-color: #ff6b6b;
+            margin-top: 12px;
+            padding: 10px 20px;
+            background: #ff6b6b;
             color: #fff;
+            border-radius: 20px;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .footer-btn:hover {
-            background-color: #e55b5b;
-        }
-
-        /* 반응형 */
-        @media (max-width: 768px) {
-            .article-list {
-                flex-direction: column;
-            }
         }
     </style>
 </head>
@@ -147,74 +124,91 @@
     <h1>삼성전자 뉴스 & 기술 블로그</h1>
     <nav>
         <a href="#news">최신 뉴스</a>
-        <a href="#tech">최신 기술 트렌드</a>
-        <a href="#community">커뮤니티 소식</a>
+        <a href="#tech">기술 트렌드</a>
+        <a href="#community">커뮤니티</a>
     </nav>
 </header>
 
-<section id="news" class="section" style="background-image: url('https://images.samsung.com/news_background.jpg'); background-size: cover; background-position: center;">
+<section id="news" class="section">
     <h2>최신 뉴스</h2>
     <ul class="article-list">
         <li>
-            <img src="https://images.samsung.com/news1.jpg" alt="AI 반도체">
-            <a href="https://news.samsung.com/kr" target="_blank">AI 기술을 활용한 새로운 반도체 개발 소식</a>
+            <img src="https://via.placeholder.com/400x160?text=삼성+뉴스룸" alt="삼성 뉴스룸">
+            <a href="https://news.samsung.com/kr/latest" target="_blank">
+                삼성전자 뉴스룸 최신기사</a>
+            <p>삼성전자 공식 뉴스룸의 최신 기사 목록 페이지로 이동합니다. 다양한 보도자료와 최신 소식을 확인할 수 있어요.</p>
         </li>
         <li>
-            <img src="https://images.samsung.com/news2.jpg" alt="ESG">
-            <a href="https://news.samsung.com/kr/category/sustainability" target="_blank">삼성전자 친환경 경영 전략 및 ESG 보고서 발표</a>
+            <img src="https://via.placeholder.com/400x160?text=One+UI+8.5" alt="One UI 8.5 베타">
+            <a href="https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%84-One-UI-8.5-%EB%B2%A0%ED%83%80-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%9A%B4" target="_blank">
+                갤럭시 S25 One UI 8.5 베타 운영 시작</a>
+            <p>삼성전자가 갤럭시 S25 시리즈를 대상으로 One UI 8.5 베타 프로그램을 운영하기 시작했다는 공식 기사입니다. :contentReference[oaicite:2]{index=2}</p>
         </li>
         <li>
-            <img src="https://images.samsung.com/news3.jpg" alt="스마트 시티">
-            <a href="https://news.samsung.com/kr/category/5g" target="_blank">5G와 IoT 기반 스마트 시티 솔루션 공개</a>
+            <img src="https://via.placeholder.com/400x160?text=Newsroom+Home" alt="뉴스룸 홈">
+            <a href="https://news.samsung.com/kr" target="_blank">
+                삼성 뉴스룸 메인</a>
+            <p>삼성전자 뉴스룸 메인 페이지로 이동합니다. 뉴스룸은 기업·제품·CSR 등 다양한 카테고리 소식을 제공합니다. :contentReference[oaicite:3]{index=3}</p>
         </li>
     </ul>
 </section>
 
 <section id="tech" class="section">
-    <h2>최신 기술 트렌드</h2>
+    <h2>기술 트렌드</h2>
     <ul class="article-list">
         <li>
-            <img src="https://images.samsung.com/tech1.jpg" alt="AI 반도체">
-            <a href="https://www.samsung.com/kr/semiconductor/tech/" target="_blank">차세대 반도체 기술과 AI 접목 사례</a>
+            <img src="https://via.placeholder.com/400x160?text=Semiconductor+Global+News" alt="삼성 반도체 글로벌 뉴스">
+            <a href="https://news.samsungsemiconductor.com/global/latest/" target="_blank">
+                삼성 반도체 글로벌 뉴스</a>
+            <p>삼성 반도체 공식 뉴스룸의 최신 기술·보도 자료 모음입니다. 반도체 기술 혁신 이야기들이 계속 업데이트돼요. :contentReference[oaicite:4]{index=4}</p>
         </li>
         <li>
-            <img src="https://images.samsung.com/tech2.jpg" alt="파운드리">
-            <a href="https://www.samsung.com/kr/semiconductor/foundry/" target="_blank">파운드리 산업의 발전과 글로벌 경쟁력</a>
+            <img src="https://via.placeholder.com/400x160?text=Semiconductor+Tech+Blog" alt="Semiconductor Tech Blog">
+            <a href="https://semiconductor.samsung.com/news-events/tech-blog/" target="_blank">
+                삼성 반도체 기술 블로그</a>
+            <p>삼성 반도체 공식 기술 블로그로, 기술 리더십과 시장 트렌드, 고객 성공 사례 등의 글을 확인할 수 있습니다. :contentReference[oaicite:5]{index=5}</p>
         </li>
         <li>
-            <img src="https://images.samsung.com/tech3.jpg" alt="메모리 반도체">
-            <a href="https://www.samsung.com/kr/semiconductor/memory/" target="_blank">메모리 반도체 혁신 동향과 응용 분야</a>
+            <img src="https://via.placeholder.com/400x160?text=Semiconductor+Global" alt="Semiconductor Official">
+            <a href="https://semiconductor.samsung.com/" target="_blank">
+                삼성 반도체 공식 홈페이지</a>
+            <p>삼성 반도체 제품 및 기술 포트폴리오, 최신 솔루션 등 핵심 반도체 정보를 확인할 수 있는 공식 페이지입니다. :contentReference[oaicite:6]{index=6}</p>
         </li>
     </ul>
 </section>
 
 <section id="community" class="section">
-    <h2>커뮤니티 소식</h2>
+    <h2>커뮤니티 & SNS</h2>
     <ul class="article-list">
         <li>
-            <img src="https://images.samsung.com/community1.jpg" alt="팬 미팅">
-            <a href="https://community.samsung.com/kr/events" target="_blank">삼성전자 팬 미팅 및 온라인 이벤트 일정</a>
+            <img src="https://via.placeholder.com/400x160?text=Samsung+Newsroom+YT" alt="삼성 뉴스룸 YouTube">
+            <a href="https://www.youtube.com/@SamsungNewsroom" target="_blank">
+                삼성 뉴스룸 공식 YouTube</a>
+            <p>삼성전자 공식 뉴스룸 YouTube — 다양한 영상 뉴스와 제품/기술 설명 영상이 올라옵니다. :contentReference[oaicite:7]{index=7}</p>
         </li>
         <li>
-            <img src="https://images.samsung.com/community2.jpg" alt="리뷰">
-            <a href="https://community.samsung.com/kr/reviews" target="_blank">사용자 리뷰 모음: 최신 갤럭시 시리즈 평가</a>
+            <img src="https://via.placeholder.com/400x160?text=Samsung+Semiconductor+YT" alt="삼성 반도체 YouTube">
+            <a href="https://www.youtube.com/@SamsungSemiconductorGlobal/videos" target="_blank">
+                삼성 반도체 공식 YouTube</a>
+            <p>삼성 반도체 공식 유튜브 채널 — 메모리, 파운드리 등 반도체 관련 교육·백과 콘텐츠를 확인할 수 있습니다. :contentReference[oaicite:8]{index=8}</p>
         </li>
         <li>
-            <img src="https://images.samsung.com/community3.jpg" alt="Q&A">
-            <a href="https://community.samsung.com/kr/qna" target="_blank">기술 블로그 Q&A: 궁금증 바로 해결하기</a>
+            <img src="https://via.placeholder.com/400x160?text=Samsung+Inst" alt="삼성 인스타그램">
+            <a href="https://www.instagram.com/samsungnewsroom/" target="_blank">
+                삼성전자 공식 인스타그램</a>
+            <p>삼성전자 공식 소셜 인스타그램 — 신제품 및 이벤트 관련 이미지/영상 콘텐츠 확인 가능.</p>
         </li>
     </ul>
 </section>
 
 <footer>
-    <p>삼성전자 공식 블로그 & 커뮤니티 페이지</p>
+    <p>삼성전자 공식 뉴스 & 기술 리소스 모음</p>
     <p>
-        <a href="https://www.samsung.com/kr/aboutsamsung/" target="_blank">회사소개</a> |
-        <a href="https://www.samsung.com/kr/info/privacy/" target="_blank">개인정보처리방침</a> |
+        <a href="https://news.samsung.com/kr" target="_blank">뉴스룸 메인</a> |
+        <a href="https://semiconductor.samsung.com/" target="_blank">반도체 공식</a> |
         <a href="https://www.samsung.com/kr/support/contact/" target="_blank">문의</a>
     </p>
-    <p>© 2025 삼성전자. All rights reserved.</p>
-    <a href="https://www.samsung.com/kr/" target="_blank" class="footer-btn">🏠 메인 화면으로 돌아가기</a>
+    <a href="https://news.samsung.com/kr" target="_blank" class="footer-btn">🏠 삼성 뉴스룸 가기</a>
 </footer>
 
 </body>
