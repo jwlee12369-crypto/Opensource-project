@@ -1,15 +1,15 @@
-#반도체와 반도체 기업 소개 웹페이지 입니다. (This is a web page about semiconductor and semiconductor companies.)
+# 반도체와 반도체 기업 소개 웹페이지 입니다. (This is a web page about semiconductor and semiconductor companies.)
 
 ## 프로젝트 소개 (introduction)
 이 프로젝트는 반도체디스플레이융합공학부의 학부생으로서, 반도체 산업의 핵심 기업들을 웹페이지 형태로 소개하여 반도체와 관련한 정보들을 보여주는 오픈소스 프로젝트입니다.
 
 ## 주요 콘텐츠
 
-### 1. 반도체 소개
+#### 1. 반도체 소개
 *반도체란 무엇인가?
 
-### 2. 반도체 기업 소개
+#### 2. 반도체 기업 소개
 
-### 3. 반도체 기업 관련 뉴스
+#### 3. 반도체 기업 관련 뉴스
 
-### 4. 반도체 기업의 주식
+#### 4. 반도체 기업의 주식
