@@ -2,25 +2,44 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+< feature/samsung-page-footer
     <title>삼성전자 뉴스 & 팁 블로그</title>
+=
+    <title>삼성전자 뉴스 & 기술 블로그</title>
+> main
     <style>
         body {
             font-family: 'Malgun Gothic', sans-serif;
             margin: 0;
             padding: 0;
+< feature/samsung-page-footer
             background-color: #f0f2f5;
             color: #333;
+=
+            background-color: #f5f7fa;
+            color: #333;
+            scroll-behavior: smooth;
+> main
         }
 
         header {
             background-color: #0d47a1;
             color: white;
+< feature/samsung-page-footer
             padding: 30px 20px;
             text-align: center;
+=======
+            padding: 20px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+> main
         }
 
         header h1 {
             margin: 0;
+< feature/samsung-page-footer
             font-size: 32px;
         }
 
@@ -31,6 +50,34 @@
             background-color: white;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+=
+            font-size: 28px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+> main
         }
 
         .section h2 {
@@ -38,6 +85,7 @@
             margin-top: 0;
         }
 
+< feature/samsung-page-footer
         .section p {
             line-height: 1.7;
         }
@@ -56,6 +104,42 @@
             color: #004ba0;
             font-weight: bold;
             transition: color 0.3s;
+=
+        .article-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .article-list li {
+            flex: 1 1 280px;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .article-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .article-list img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .article-list a {
+            display: block;
+            padding: 15px;
+            color: #004ba0;
+            font-weight: bold;
+            text-decoration: none;
+> main
         }
 
         .article-list a:hover {
@@ -96,11 +180,22 @@
         .footer-btn:hover {
             background-color: #e55b5b;
         }
+< feature/samsung-page-footer
+=
+
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .article-list {
+                flex-direction: column;
+            }
+        }
+> main
     </style>
 </head>
 <body>
 
 <header>
+< feature/samsung-page-footer
     <h1>삼성전자 뉴스 & 팁 블로그</h1>
 </header>
 
@@ -128,21 +223,94 @@
         <li><a href="#">삼성전자 팬 미팅 및 온라인 이벤트 일정</a></li>
         <li><a href="#">사용자 리뷰 모음: 최신 갤럭시 시리즈 평가</a></li>
         <li><a href="#">기술 블로그 Q&A: 궁금증 바로 해결하기</a></li>
+=
+    <h1>삼성전자 뉴스 & 기술 블로그</h1>
+    <nav>
+        <a href="#news">최신 뉴스</a>
+        <a href="#tech">최신 기술 트렌드</a>
+        <a href="#community">커뮤니티 소식</a>
+    </nav>
+</header>
+
+<section id="news" class="section" style="background-image: url('https://images.samsung.com/news_background.jpg'); background-size: cover; background-position: center;">
+    <h2>최신 뉴스</h2>
+    <ul class="article-list">
+        <li>
+            <img src="https://images.samsung.com/news1.jpg" alt="AI 반도체">
+            <a href="https://news.samsung.com/kr" target="_blank">AI 기술을 활용한 새로운 반도체 개발 소식</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/news2.jpg" alt="ESG">
+            <a href="https://news.samsung.com/kr/category/sustainability" target="_blank">삼성전자 친환경 경영 전략 및 ESG 보고서 발표</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/news3.jpg" alt="스마트 시티">
+            <a href="https://news.samsung.com/kr/category/5g" target="_blank">5G와 IoT 기반 스마트 시티 솔루션 공개</a>
+        </li>
+    </ul>
+</section>
+
+<section id="tech" class="section">
+    <h2>최신 기술 트렌드</h2>
+    <ul class="article-list">
+        <li>
+            <img src="https://images.samsung.com/tech1.jpg" alt="AI 반도체">
+            <a href="https://www.samsung.com/kr/semiconductor/tech/" target="_blank">차세대 반도체 기술과 AI 접목 사례</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/tech2.jpg" alt="파운드리">
+            <a href="https://www.samsung.com/kr/semiconductor/foundry/" target="_blank">파운드리 산업의 발전과 글로벌 경쟁력</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/tech3.jpg" alt="메모리 반도체">
+            <a href="https://www.samsung.com/kr/semiconductor/memory/" target="_blank">메모리 반도체 혁신 동향과 응용 분야</a>
+        </li>
+    </ul>
+</section>
+
+<section id="community" class="section">
+    <h2>커뮤니티 소식</h2>
+    <ul class="article-list">
+        <li>
+            <img src="https://images.samsung.com/community1.jpg" alt="팬 미팅">
+            <a href="https://community.samsung.com/kr/events" target="_blank">삼성전자 팬 미팅 및 온라인 이벤트 일정</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/community2.jpg" alt="리뷰">
+            <a href="https://community.samsung.com/kr/reviews" target="_blank">사용자 리뷰 모음: 최신 갤럭시 시리즈 평가</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/community3.jpg" alt="Q&A">
+            <a href="https://community.samsung.com/kr/qna" target="_blank">기술 블로그 Q&A: 궁금증 바로 해결하기</a>
+        </li>
+> main
     </ul>
 </section>
 
 <footer>
     <p>삼성전자 공식 블로그 & 커뮤니티 페이지</p>
     <p>
+< feature/samsung-page-footer
         <a href="회사소개.html">회사소개</a> |
         <a href="개인정보처리방침.html">개인정보처리방침</a> |
         <a href="문의.html">문의</a>
     </p>
     <p>© 2025 삼성전자. All rights reserved.</p>
     <a href="첫 웹페이지.html" class="footer-btn">🏠 메인 화면으로 돌아가기</a>
+=
+        <a href="https://www.samsung.com/kr/aboutsamsung/" target="_blank">회사소개</a> |
+        <a href="https://www.samsung.com/kr/info/privacy/" target="_blank">개인정보처리방침</a> |
+        <a href="https://www.samsung.com/kr/support/contact/" target="_blank">문의</a>
+    </p>
+    <p>© 2025 삼성전자. All rights reserved.</p>
+    <a href="https://www.samsung.com/kr/" target="_blank" class="footer-btn">🏠 메인 화면으로 돌아가기</a>
+> main
 </footer>
 
 </body>
 </html>
+< feature/samsung-page-footer
 
 
+=
+> main

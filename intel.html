@@ -3,11 +3,10 @@
 <head>
     <title>Intel company</title>
     <style>
-        /* 아직 끝나지 않지만 제가 하고 있는 일을 보여드리고 싶어요 ^^ */
         
         body {
-        font-family: Arial;
-        margin: 0;
+            font-family: Arial;
+            margin: 0;
         }
 
         header.header {
@@ -20,31 +19,55 @@
         }
 
         .header-text {
-        background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark box */
-        color: white;                         
-        padding: 20px;
-        border-radius: 10px;
-        max-width: 600px;                    
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark box */
+            color: white;                         
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;                    
         }
 
         /* enables flex layout */
         .container {
-        display: flex;  
-        gap: 20px;      
+            display: flex;  
+            gap: 20px;      
         }
 
         /* left column */
         .side {
-        flex: 30%;
-        background-color: #f1f1f1;
-        padding: 20px;
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
         }
 
         /* Main column */
         .main {
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        footer {
+            display: flex;                
+            justify-content: center;      
+            align-items: center;          
+            padding: 20px 0;
+            background-color: #f1f1f1;   
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #60adf0; 
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #2170c4; 
         }
 
     </style>
@@ -73,12 +96,16 @@
         Intel is reportedly in discussions to supply low-end processors to Apple, which would be a significant deal for the company. </p>
     <br>
     <h2>Company values</h2>
-    <p>Customer-centric: Prioritizes customer needs and aims to deliver value through simple, fast, and clear communication.
-        Innovative: Encourages informed risk-taking and continuous improvement to stay competitive.
-        Results-driven: Focuses on executing flawlessly and making data-driven decisions.
-        Inclusive: Values diversity and builds inclusive teams where everyone can do their best work. </p>
+    <p> ● Customer-centric: Prioritizes customer needs and aims to deliver value through simple, fast, and clear communication. </p>
+    <p> ● Innovative: Encourages informed risk-taking and continuous improvement to stay competitive. </p> 
+    <p> ● Results-driven: Focuses on executing flawlessly and making data-driven decisions. </p> 
+    <p> ● Inclusive: Values diversity and builds inclusive teams where everyone can do their best work. </p>
   </div>
 </div>
+
+    <footer>
+        <a href="첫 웹페이지.html" class="back-btn">🏠 메인 화면으로 돌아가기</a>
+    </footer>
 
 
 </body>
