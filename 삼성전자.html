@@ -1,62 +1,97 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
     <title>삼성전자</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Malgun Gothic', sans-serif;
             margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        header {
             text-align: center;
-            background-color: #0074d9;
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
         }
 
         section {
-            margin-top: 30px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        img {
-            display: block;
-            margin: 0 auto 20px auto;
-            width: 150px;
-            height: auto;
-        }
-
-        h2 {
-            color: #0074d9;
-        }
-
-        ul {
-            line-height: 1.6;
-        }
-
-                    footer {
             margin-top: 50px;
-            margin-bottom: 30px;
         }
 
+        .intro-section {
+            background-image: url('삼성전자bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            padding: 60px 20px;
+            margin-top: 30px;
+            border-radius: 15px;
+        }
+
+        .intro-text {
+            width: 80%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 30px;
+            line-height: 1.6;
+            color: #333;
+            word-break: keep-all;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        hr {
+            width: 80%;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 40px auto;
+        }
+
+        .product-box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px 30px;
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .product-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .product-box ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .li-text {
+            flex: 1;
+            margin-right: 15px;
+        }
+
+        .small-icon {
+            width: 130px;
+            height: 130px;
+            border-radius: 5px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
 
         footer {
             margin-top: 50px;
             margin-bottom: 30px;
-            text-align: center; 
         }
 
         .back-btn {
             display: inline-block;
             padding: 15px 30px;
-            background-color: #0074d9; 
+            background-color: #0074d9;
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -66,30 +101,65 @@
         }
 
         .back-btn:hover {
-            background-color: #0056b3; 
+            background-color: #0056b3;
         }
-        
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>삼성전자</h1>
-    </header>
+
+    <section class="intro-section">
+        <div class="intro-text">
+            <h2>삼성전자</h2>
+            <p>
+                삼성전자는 세계 최고 수준의 반도체 기술력을 보유한 글로벌 리더로, 
+                메모리 반도체, 시스템 반도체, 모바일 AP, 이미지 센서 등 다양한 분야에서 혁신을 이끌고 있습니다.
+
+                특히 D램·NAND 분야에서는 오랜 기간 글로벌 톱티어 지위를 유지하며 시장을 선도하고 있으며,
+                최근에는 AI 시대를 대비한 고대역폭 메모리(HBM) 기술, 차세대 공정(GAA), 
+                이미지센서(ISOCELL) 등 시스템 반도체 경쟁력도 강화하고 있습니다.
+
+                삼성전자는 ‘기술로 미래를 만든다’는 비전 아래 지속적인 연구개발(R&D), 
+                ESG 경영, 글로벌 파트너십 확대를 통해 미래 반도체 시대를 준비하고 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <hr>
 
     <section>
-        <img src="samsung.png" alt="삼성전자 로고">
-        
-        <h2>기업 소개</h2>
-        <p>삼성전자는 대한민국을 대표하는 글로벌 반도체 기업으로, 메모리, 시스템 반도체, 스마트폰용 AP 등 다양한 제품을 생산하고 있습니다.</p>
+        <div class="product-box">
+            <h3>1. DRAM (고성능 메모리)</h3>
+            <p>세계 시장 점유율 1위를 자랑하는 대표 제품군입니다.</p>
+            <p style="margin-bottom: 25px;"></p>
 
-        <h2>주요 제품</h2>
-        <ul>
-            <li>DRAM</li>
-            <li>NAND Flash</li>
-            <li>스마트폰 AP</li>
-            <li>시스템 반도체</li>
-        </ul>
+            <ul>
+                <li>
+                    <span class="li-text"><strong>HBM:</strong> AI와 고성능 컴퓨팅(HPC)에 사용되는 초고대역폭 메모리</span>
+                    <img src="samsung_hbm.png" alt="삼성 HBM" class="small-icon">
+                </li>
+                <li>
+                    <span class="li-text"><strong>DDR5:</strong> 서버·PC용 차세대 메모리, 고속·저전력 제공</span>
+                </li>
+                <li>
+                    <span class="li-text"><strong>LPDDR:</strong> 스마트폰·태블릿을 위한 저전력 모바일 메모리</span>
+                </li>
+            </ul>
+
+            <br>
+            <h3>2. NAND Flash (저장장치)</h3>
+            <p>스마트폰·PC·데이터센터 등 다양한 환경에 사용되는 대용량 저장 솔루션.</p>
+
+            <ul>
+                <li>
+                    <span class="li-text"><strong>V-NAND:</strong> 3D 구조로 설계된 고성능·고용량 저장 메모리</span>
+                    <img src="samsung_vnand.png" alt="삼성 V-NAND" class="small-icon">
+                </li>
+                <li>
+                    <span class="li-text"><strong>SSD:</strong> 노트북·서버용 고속 저장장치</span>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <footer>
@@ -98,3 +168,4 @@
 
 </body>
 </html>
+
