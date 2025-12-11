@@ -1,171 +1,166 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <title>삼성전자</title>
+    <head>
+        <title>삼성전자</title>
 
-    <style>
-        body {
-            font-family: 'Malgun Gothic', sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
+        <style>
+            body {
+                font-family: 'Malgun Gothic', sans-serif;
+                margin: 20px;
+                text-align: center;
+            }
 
-        section {
-            margin-top: 50px;
-        }
+            section {
+                margin-top: 50px;
+            }
 
-        .intro-section {
-            background-image: url('삼성전자bg.jpg'); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            .intro-section {
+                background-image: url('Samsung image.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                
+                padding: 60px 20px;
+                margin-top: 30px;
+                border-radius: 15px;
+            }
 
-            padding: 60px 20px;
-            margin-top: 30px;
-            border-radius: 15px;
-        }
+            .intro-text {
+                width: 80%;
+                max-width: 700px;
+                margin: 0 auto;
+                padding: 30px;
+                line-height: 1.6;
+                color: #333;
+                word-break: keep-all;
+                background-color: rgba(255, 255, 255, 0.85);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
 
-        .intro-text {
-            width: 80%;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 30px;
-            line-height: 1.6;
-            color: #333;
-            word-break: keep-all;
-            background-color: rgba(255, 255, 255, 0.85);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+            hr {
+                width: 80%;
+                border: 0;
+                border-top: 1px solid #ccc;
+                margin: 40px auto;
+            }
 
-        hr {
-            width: 80%;
-            border: 0;
-            border-top: 1px solid #ccc;
-            margin: 40px auto;
-        }
+            .product-box {
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 20px 30px;
+                width: 80%;
+                margin: 0 auto;
+                background-color: #f9f9f9;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+                text-align: left;
+            }
 
-        .product-box {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 20px 30px;
-            width: 80%;
-            margin: 0 auto;
-            background-color: #f9f9f9;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-            text-align: left;
-        }
+            .product-box ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
 
-        .product-box ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+            .product-box ul li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #eee;
+            }
 
-        .product-box ul li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-        }
+            .li-text {
+                flex: 1;
+                margin-right: 15px;
+            }
 
-        .li-text {
-            flex: 1;
-            margin-right: 15px;
-        }
+            .small-icon {
+                width: 130px;
+                height: 130px;
+                border-radius: 5px;
+                object-fit: cover;
+                border: 1px solid #ddd;
+            }
 
-        .small-icon {
-            width: 130px;
-            height: 130px;
-            border-radius: 5px;
-            object-fit: cover;
-            border: 1px solid #ddd;
-        }
+            footer {
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
 
-        footer {
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
+            .back-btn {
+                display: inline-block;
+                padding: 15px 30px;
+                background-color: #9db5eb;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 30px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+                transition: background-color 0.3s;
+            }
 
-        .back-btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #0074d9;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-            transition: background-color 0.3s;
-        }
+            .back-btn:hover {
+                background-color: #7d9bd6;
+            }
+        </style>
+    </head>
 
-        .back-btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
+    <body>
 
-<body>
+        <section class="intro-section">
+            <div class="intro-text">
+                <h2>삼성전자</h2>
+                <p>
+                    삼성전자는 세계적인 기술 기업으로 반도체, 스마트폰, 가전, 네트워크 장비 등 다양한 분야에서 글로벌 시장을 선도하고 있습니다.
+                    특히 메모리 반도체 분야에서는 세계 점유율 1위를 유지하며, 고성능·저전력 기술을 바탕으로 AI·클라우드 시대의 핵심 솔루션을 제공하고 있습니다.
 
-    <section class="intro-section">
-        <div class="intro-text">
-            <h2>삼성전자</h2>
-            <p>
-                삼성전자는 세계 최고 수준의 반도체 기술력을 보유한 글로벌 리더로, 
-                메모리 반도체, 시스템 반도체, 모바일 AP, 이미지 센서 등 다양한 분야에서 혁신을 이끌고 있습니다.
+                    또한 파운드리, 시스템 반도체와 같은 비메모리 영역에도 투자를 확대하며 미래 전략 산업에서 영향력을 강화하고 있습니다.
+                    혁신 기술과 지속가능경영(ESG)을 결합하여 글로벌 IT 생태계 발전에 기여하는 것을 목표로 하고 있습니다.
+                </p>
+            </div>
+        </section>
 
-                특히 D램·NAND 분야에서는 오랜 기간 글로벌 톱티어 지위를 유지하며 시장을 선도하고 있으며,
-                최근에는 AI 시대를 대비한 고대역폭 메모리(HBM) 기술, 차세대 공정(GAA), 
-                이미지센서(ISOCELL) 등 시스템 반도체 경쟁력도 강화하고 있습니다.
+        <hr>
 
-                삼성전자는 ‘기술로 미래를 만든다’는 비전 아래 지속적인 연구개발(R&D), 
-                ESG 경영, 글로벌 파트너십 확대를 통해 미래 반도체 시대를 준비하고 있습니다.
-            </p>
-        </div>
-    </section>
+        <section>
+            <div class="product-box">
+                <h3>1. DRAM (메모리 반도체)</h3>
+                <p>데이터 저장과 처리 속도를 결정하는 핵심 메모리입니다.</p>
+                <p style="margin-bottom: 25px;"></p>
+                <ul>
+                    <li>
+                        <span class="li-text"><strong>GDDR7:</strong> 차세대 그래픽용 초고속 메모리</span>
+                        <img src="GDDR7.png" alt="GDDR7" class="small-icon">
+                    </li>
+                    <li>
+                        <span class="li-text"><strong>DDR5:</strong> 더 빠르고 효율적인 차세대 표준 DRAM</span>
+                    </li>
+                    <li>
+                        <span class="li-text"><strong>LPDDR5X:</strong> 모바일 기기에 특화된 고성능 저전력 메모리</span>
+                    </li>
+                </ul>
 
-    <hr>
+                <br>
 
-    <section>
-        <div class="product-box">
-            <h3>1. DRAM (고성능 메모리)</h3>
-            <p>세계 시장 점유율 1위를 자랑하는 대표 제품군입니다.</p>
-            <p style="margin-bottom: 25px;"></p>
+                <h3>2. NAND Flash (저장 장치)</h3>
+                <p>데이터를 장기간 보관하는 비휘발성 저장 기술입니다.</p>
+                <ul>
+                    <li>
+                        <span class="li-text"><strong>V-NAND:</strong> 3D 적층 기술 기반 고성능 저장 솔루션</span>
+                        <img src="V-NAND.png" alt="V-NAND" class="small-icon">
+                    </li>
+                    <li>
+                        <span class="li-text"><strong>Portable SSD:</strong> 빠르고 안전한 외장형 저장 장치</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-            <ul>
-                <li>
-                    <span class="li-text"><strong>HBM:</strong> AI와 고성능 컴퓨팅(HPC)에 사용되는 초고대역폭 메모리</span>
-                    <img src="samsung_hbm.png" alt="삼성 HBM" class="small-icon">
-                </li>
-                <li>
-                    <span class="li-text"><strong>DDR5:</strong> 서버·PC용 차세대 메모리, 고속·저전력 제공</span>
-                </li>
-                <li>
-                    <span class="li-text"><strong>LPDDR:</strong> 스마트폰·태블릿을 위한 저전력 모바일 메모리</span>
-                </li>
-            </ul>
+        <footer>
+            <a href="첫 웹페이지.html" class="back-btn">🏠 메인 화면으로 돌아가기</a>
+        </footer>
 
-            <br>
-            <h3>2. NAND Flash (저장장치)</h3>
-            <p>스마트폰·PC·데이터센터 등 다양한 환경에 사용되는 대용량 저장 솔루션.</p>
-
-            <ul>
-                <li>
-                    <span class="li-text"><strong>V-NAND:</strong> 3D 구조로 설계된 고성능·고용량 저장 메모리</span>
-                    <img src="samsung_vnand.png" alt="삼성 V-NAND" class="small-icon">
-                </li>
-                <li>
-                    <span class="li-text"><strong>SSD:</strong> 노트북·서버용 고속 저장장치</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <a href="첫 웹페이지.html" class="back-btn">🏠 메인 화면으로 돌아가기</a>
-    </footer>
-
-</body>
+    </body>
 </html>
 
