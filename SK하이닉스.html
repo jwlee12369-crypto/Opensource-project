@@ -1,166 +1,221 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>SK 하이닉스</title>
-
-        <style>
-            body {
-                font-family: 'Malgun Gothic', sans-serif;
-                margin: 20px;
-                text-align: center;
-            }
-
-            section {
-                margin-top: 50px;
-            }
-
-            .intro-section {
-                background-image: url('SK하이닉스 image.jpg');
-                background-size: cover; 
-                background-position: center; 
-                background-repeat: no-repeat; 
-                
-                padding: 60px 20px; 
-                margin-top: 30px; 
-                border-radius: 15px; 
-            }
-
-            .intro-text {
-                width: 80%;
-                max-width: 700px; 
-                margin: 0 auto; 
-                padding: 30px;
-                line-height: 1.6;
-                color: #333; 
-                word-break: keep-all; 
-                background-color: rgba(255, 255, 255, 0.85); 
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-            }
-
-            hr {
-                width: 80%;            
-                border: 0;             
-                border-top: 1px solid #ccc; 
-                margin: 40px auto;     
-            }
-
-            .product-box {
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                padding: 20px 30px;
-                width: 80%;          
-                margin: 0 auto;       
-                background-color: #f9f9f9;
-                box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-                text-align: left;
-            }
-
-            .product-box ul {
-            list-style-type: none; 
-            padding-left: 0;
-            }
-
-            .product-box ul li {
-            display: flex;
-            justify-content: space-between; 
-            align-items: center; 
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-            }
-
-            .li-text {
-            flex: 1; 
-            margin-right: 15px; 
-            }
-
-        
-            .small-icon {
-            width: 130px; 
-            height: 130px; 
-            border-radius: 5px;
-            object-fit: cover;
-            border: 1px solid #ddd;
-            }
-
-            footer {
-            margin-top: 50px;
-            margin-bottom: 30px;
+<head>
+    <meta charset="UTF-8">
+    <title>삼성전자 뉴스 & 기술 블로그</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+            scroll-behavior: smooth;
         }
 
-        .back-btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #eb9d9d; 
+        header {
+            background-color: #0d47a1;
             color: white;
+            padding: 20px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
             text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
-            border-radius: 30px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-            transition: background-color 0.3s;
+            transition: color 0.3s;
         }
 
-        .back-btn:hover {
-            background-color: #d18e8e; 
+        nav a:hover {
+            color: #ff6b6b;
         }
 
-        </style>
-    </head>
+        .section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
 
-    <body>
+        .section h2 {
+            color: #0d47a1;
+            margin-top: 0;
+        }
 
-        <section class="intro-section">
-            <div class="intro-text">
-                <h2>SK하이닉스 </h2>
-                <p>
-                    SK하이닉스는 글로벌 테크 리더십(Global Tech Leadership)을 바탕으로 고객, 협력사, 투자자, 지역사회, 구성원 등 이해관계자들에게 더 큰 가치를 제공합니다.
-                    또한 경제적 이익만을 추구하는 경영에서 벗어나, 사회적 가치와 건강한 지배구조를 함께 고민하는 ESG 경영을 강화하며 지속 가능한 성장을 추구합니다.
+        .article-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-                    AI 확산이 가속화되는 시대, SK하이닉스는 단순한 메모리 공급자를 넘어 ‘Full Stack AI Memory Creator’로 진화하고 있습니다.
-                    이는 고객의 요구를 충족하는 수준을 넘어, AI 컴퓨팅의 한계를 함께 해결하며 새로운 가치를 창조하는 ‘공동 설계자(Co-Designer)’이자 ‘생태계 파트너’로서의 역할을 의미합니다.
-                    앞으로도 SK하이닉스는 D램과 낸드플래시를 아우르는 풀스택 AI 메모리 기술로, AI 시대의 핵심 가치를 만들어가는 기업입니다.
-                </p>
-            </div>
-        </section>
+        .article-list li {
+            flex: 1 1 280px;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-        <hr>
-    
-    <section>
-        <div class="product-box">
-            <h3>1. DRAM (초고속 메모리)</h3>
-            <p>데이터를 처리하는 핵심 반도체입니다.</p>
-            <p style="margin-bottom: 25px;"></p>
-            <ul>
-                <li>
-                    <span class="li-text"><strong>HBM:</strong> AI 시대를 이끄는 고대역폭 초고속 메모리</span>
-                    <img src="HBM.png" alt="HBM" class="small-icon">
-                </li>
-                <li>
-                    <span class="li-text"><strong>DDR5:</strong> 서버와 PC를 위한 차세대 표준 메모리</span>
-                    </li>
-                <li>
-                    <span class="li-text"><strong>LPDDR:</strong> 모바일 기기에 최적화된 저전력 메모리</span>
-                </li>
-            </ul>
-            <br>    
-            <h3>2. NAND Flash (저장 장치)</h3>
-            <p>데이터를 영구적으로 저장하는 반도체입니다.</p>
-            <ul>
-                <li>
-                    <span class="li-text"><strong>Enterprise SSD:</strong> 데이터센터용 대용량 저장장치</span>
-                    <img src="NAND Flash.png" alt="NAND Flash" class="small-icon">
-                </li>
-                <li>
-                    <span class="li-text"><strong>Mobile UFS:</strong> 스마트폰용 고속 내장 메모리</span>
-                </li>
-            </ul>
-        </div>
-    </section>
+        .article-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
 
-    <footer>
-        <a href="첫 웹페이지.html" class="back-btn">🏠 메인 화면으로 돌아가기</a>
-    </footer>
+        .article-list img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
 
-    </body>
+        .article-list a {
+            display: block;
+            padding: 15px;
+            color: #004ba0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .article-list a:hover {
+            color: #ff6b6b;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 40px 20px;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ff6b6b;
+        }
+
+        .footer-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            margin-top: 15px;
+            background-color: #ff6b6b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .footer-btn:hover {
+            background-color: #e55b5b;
+        }
+
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .article-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>삼성전자 뉴스 & 기술 블로그</h1>
+    <nav>
+        <a href="#news">최신 뉴스</a>
+        <a href="#tech">최신 기술 트렌드</a>
+        <a href="#community">커뮤니티 소식</a>
+    </nav>
+</header>
+
+<section id="news" class="section" style="background-image: url('https://images.samsung.com/news_background.jpg'); background-size: cover; background-position: center;">
+    <h2>최신 뉴스</h2>
+    <ul class="article-list">
+        <li>
+            <img src="https://images.samsung.com/news1.jpg" alt="AI 반도체">
+            <a href="https://news.samsung.com/kr" target="_blank">AI 기술을 활용한 새로운 반도체 개발 소식</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/news2.jpg" alt="ESG">
+            <a href="https://news.samsung.com/kr/category/sustainability" target="_blank">삼성전자 친환경 경영 전략 및 ESG 보고서 발표</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/news3.jpg" alt="스마트 시티">
+            <a href="https://news.samsung.com/kr/category/5g" target="_blank">5G와 IoT 기반 스마트 시티 솔루션 공개</a>
+        </li>
+    </ul>
+</section>
+
+<section id="tech" class="section">
+    <h2>최신 기술 트렌드</h2>
+    <ul class="article-list">
+        <li>
+            <img src="https://images.samsung.com/tech1.jpg" alt="AI 반도체">
+            <a href="https://www.samsung.com/kr/semiconductor/tech/" target="_blank">차세대 반도체 기술과 AI 접목 사례</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/tech2.jpg" alt="파운드리">
+            <a href="https://www.samsung.com/kr/semiconductor/foundry/" target="_blank">파운드리 산업의 발전과 글로벌 경쟁력</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/tech3.jpg" alt="메모리 반도체">
+            <a href="https://www.samsung.com/kr/semiconductor/memory/" target="_blank">메모리 반도체 혁신 동향과 응용 분야</a>
+        </li>
+    </ul>
+</section>
+
+<section id="community" class="section">
+    <h2>커뮤니티 소식</h2>
+    <ul class="article-list">
+        <li>
+            <img src="https://images.samsung.com/community1.jpg" alt="팬 미팅">
+            <a href="https://community.samsung.com/kr/events" target="_blank">삼성전자 팬 미팅 및 온라인 이벤트 일정</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/community2.jpg" alt="리뷰">
+            <a href="https://community.samsung.com/kr/reviews" target="_blank">사용자 리뷰 모음: 최신 갤럭시 시리즈 평가</a>
+        </li>
+        <li>
+            <img src="https://images.samsung.com/community3.jpg" alt="Q&A">
+            <a href="https://community.samsung.com/kr/qna" target="_blank">기술 블로그 Q&A: 궁금증 바로 해결하기</a>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>삼성전자 공식 블로그 & 커뮤니티 페이지</p>
+    <p>
+        <a href="https://www.samsung.com/kr/aboutsamsung/" target="_blank">회사소개</a> |
+        <a href="https://www.samsung.com/kr/info/privacy/" target="_blank">개인정보처리방침</a> |
+        <a href="https://www.samsung.com/kr/support/contact/" target="_blank">문의</a>
+    </p>
+    <p>© 2025 삼성전자. All rights reserved.</p>
+    <a href="https://www.samsung.com/kr/" target="_blank" class="footer-btn">🏠 메인 화면으로 돌아가기</a>
+</footer>
+
+</body>
 </html>
