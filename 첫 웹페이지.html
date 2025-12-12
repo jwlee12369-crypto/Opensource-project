@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <title>반도체 기업 분석</title>
+        <title>반도체 기업 소개</title>
     <style>
 
 body {
@@ -34,6 +34,26 @@ body {
             align-items: center;
             margin: 0 50px;
         }
+
+        .company-box img {
+            width: 100px; 
+            height: 100px; 
+            border: 2px solid black;
+            display: block;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: white;
+            border-radius: 30px; 
+            transition: transform 0.3s ease; 
+        }
+
+        .company-box a:hover img {
+            transform: translateY(-15px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+            border-color: #0056b3; 
+        }
+
         img {
             width: 100px; 
             height: 100px; 
@@ -172,12 +192,25 @@ body {
         .up { color: #d30000; font-size: 12px; }
         .down { color: #0000d3; font-size: 12px; }
 
+        #footer {
+            background-color: aliceblue; 
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        #footer p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #1b1919;
+        }
     </style>  
     </head>
 
 <body>
     <div id="header">
-        <h1>삼성전자-SK하이닉스-인텔 기업의 반도체 제조 </h1>
+        <h1>삼성전자-SK하이닉스-인텔 기업의 반도체</h1>
     </div>
 
     <div id="nav">
@@ -286,6 +319,11 @@ body {
             </div>
         </aside>
         
+    </div>
+
+    <div id="footer">
+        <p>Next Generation Semiconductor Convergence Engineering Department, Hanyang University ERICA</p>
+        <p>Copyright 2025. All rights reserved.</p>
     </div>
 
 </body>
